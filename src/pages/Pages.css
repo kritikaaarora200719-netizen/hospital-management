@@ -1,0 +1,211 @@
+/* Shared inner-page styles */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-grid h2 {
+  margin-bottom: 14px;
+}
+.about-image img {
+
+.about-grid p {
+  color: var(--neutral-700);
+  line-height: 1.8;
+}
+
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.mv-card {
+  background: var(--neutral-50);
+  border-radius: var(--radius);
+  padding: 30px;
+  border: 1px solid var(--neutral-200);
+  box-shadow: var(--shadow-sm);
+}
+
+.mv-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.mv-card p {
+  color: var(--neutral-700);
+}
+
+/* Doctor search bar */
+.search-bar {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.search-bar input,
+.search-bar select {
+  padding: 11px 14px;
+  border: 1px solid var(--neutral-300);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+}
+
+.search-bar input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-bar select {
+  min-width: 180px;
+}
+
+.search-bar input:focus,
+.search-bar select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+/* Contact page */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-info-card {
+  background: var(--primary);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 30px;
+}
+
+.contact-info-card h3 {
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.contact-info-card ul li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  align-items: flex-start;
+}
+
+.contact-info-card .ci-icon {
+  font-size: 1.3rem;
+}
+
+.contact-info-card .ci-label {
+  font-size: 0.82rem;
+  opacity: 0.8;
+}
+
+.contact-info-card .ci-value {
+  font-weight: 500;
+}
+
+.map-embed {
+  margin-top: 24px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--neutral-200);
+  background: var(--neutral-50);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Login page */
+.login-page {
+  min-height: calc(100vh - 68px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--primary-light), #fff);
+}
+
+.login-card {
+  background: var(--neutral-50);
+  border-radius: var(--radius);
+  padding: 36px;
+  box-shadow: var(--shadow-lg);
+  max-width: 420px;
+  width: 100%;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.login-card .login-sub {
+  text-align: center;
+  color: var(--neutral-500);
+  margin-bottom: 24px;
+}
+
+.role-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.role-option {
+  padding: 14px 8px;
+  border: 2px solid var(--neutral-200);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  background: var(--neutral-50);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--neutral-700);
+}
+
+.role-option .role-icon {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.role-option:hover {
+  border-color: var(--primary);
+}
+
+.role-option.selected {
+  border-color: var(--primary);
+  background: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+.login-hint {
+  font-size: 0.82rem;
+  color: var(--neutral-500);
+  text-align: center;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .about-grid,
+  .mission-vision,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

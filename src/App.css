@@ -1,0 +1,199 @@
+/* Button component styles - imported via App.css */
+.public-content {
+  min-height: calc(100vh - 68px);
+  display: flex;
+  flex-direction: column;
+}
+
+.public-content > main {
+  flex: 1;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-solid {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-solid:hover {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary-light);
+}
+
+.btn-accent {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-accent:hover {
+  background: var(--accent-dark);
+  color: #fff;
+}
+
+/* Page hero (inner pages) */
+.page-hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: #fff;
+  padding: 56px 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  color: #fff;
+  font-size: 2.3rem;
+  margin-bottom: 8px;
+}
+
+.page-hero p {
+  font-size: 1.05rem;
+  opacity: 0.92;
+}
+
+/* Card grids */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Section header with CTA */
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.section-head h2 {
+  font-size: 1.7rem;
+}
+
+.section-head a {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Portal layout */
+.portal-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.portal-main {
+  flex: 1;
+  padding: 30px;
+  background: var(--neutral-100);
+  min-width: 0;
+}
+
+.portal-main h1 {
+  font-size: 1.7rem;
+  margin-bottom: 6px;
+}
+
+.portal-main .portal-sub {
+  color: var(--neutral-500);
+  margin-bottom: 24px;
+}
+
+/* Stat cards (dashboards) */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  background: var(--neutral-50);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--neutral-200);
+}
+
+.stat-card .stat-icon {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.stat-card .stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary);
+}
+
+.stat-card .stat-label {
+  color: var(--neutral-500);
+  font-size: 0.9rem;
+}
+
+.panel {
+  background: var(--neutral-50);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--neutral-200);
+  margin-bottom: 24px;
+}
+
+.panel h2 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.profile-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.profile-info .info-item {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+.profile-info .info-item strong {
+  display: block;
+  color: var(--neutral-500);
+  font-size: 0.82rem;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 600px) {
+  .profile-info {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,69 @@
+.doctor-card {
+  background: var(--neutral-50);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--neutral-200);
+  transition: transform 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.doctor-image-wrap {
+  width: 100%;
+  height: 220px;
+  background: var(--neutral-200);
+  overflow: hidden;
+}
+
+.doctor-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctor-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.doctor-info h3 {
+  font-size: 1.15rem;
+}
+
+.doctor-spec {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-top: -4px;
+}
+
+.doctor-details {
+  margin: 8px 0;
+}
+
+.doctor-details li {
+  font-size: 0.9rem;
+  color: var(--neutral-500);
+  margin-bottom: 4px;
+}
+
+.doctor-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.doctor-actions .btn {
+  flex: 1;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 0.88rem;
+}
